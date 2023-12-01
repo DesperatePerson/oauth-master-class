@@ -34,7 +34,6 @@ window.onload = () => {
       }
     )
       .then(({handler}) => {
-        window.close();
         return handler();
       })
       .then((data) => console.log("Сообщение с токеном", data))
