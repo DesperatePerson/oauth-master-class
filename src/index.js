@@ -9,7 +9,8 @@ window.onload = () => {
       'https://oauth-master-class-azure.vercel.app/'
    )  
       .then(function(result) {
-        return result.handler()
+        window.close();
+        return result.handler();
       })
       .then((data) => console.log("Сообщение с токеном", data))
       .catch((error) => console.log("Обработка ошибки", error));
