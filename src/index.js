@@ -33,9 +33,7 @@ window.onload = () => {
         buttonIcon: 'ya',
       }
     )
-      .then(function(result) {
-               return result.handler()
-            })
+      .then(({handler}) => handler())
       .then((data) => console.log("Сообщение с токеном", data))
       .catch((error) => console.log("Обработка ошибки", error));
   };
