@@ -33,12 +33,8 @@ window.onload = () => {
         buttonIcon: 'ya',
       }
     )
-      .then(({ handler }) => handler())
-      .then(async (data) => {
-        const result = await fetchYandexData(data.access_token);
-        authorize(result);
-        console.log(result, data);
-      })
-      .catch((error) => console.log("Что-то пошло не так: ", error));
+      .then(({handler}) => handler())
+      .then(data => console.log('Сообщение с токеном', data))
+      .catch(error => console.log('Обработка ошибки', error));
   };
 };
