@@ -4,7 +4,7 @@ window.onload = () => {
       {
          client_id: '07ba81568e504583b5f33282cfdcd5b1',
          response_type: 'token',
-         redirect_uri: 'https://oauth-master-class-azure.vercel.app/token'
+         redirect_uri: 'https://oauth-master-class-azure.vercel.app/token.html'
       },
       'https://oauth-master-class-azure.vercel.app/'
    )  
@@ -18,7 +18,7 @@ window.onload = () => {
       {
         client_id: "07ba81568e504583b5f33282cfdcd5b1",
         response_type: "token",
-        redirect_uri: "https://oauth-master-class-azure.vercel.app/token",
+        redirect_uri: "",
       },
       "https://oauth-master-class-azure.vercel.app/",
       {
