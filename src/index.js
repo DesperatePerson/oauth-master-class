@@ -9,12 +9,12 @@ window.onload = () => {
       "https://oauth-master-class-azure.vercel.app/",
       {
         view: "button",
-        parentId: "buttonContainer",
-        buttonSize: "m",
-        buttonView: "main",
-        buttonTheme: "light",
-        buttonBorderRadius: "0",
-        buttonIcon: "ya",
+        parentId: "buttonContainerId",
+        buttonSize: 'm',
+        buttonView: 'main',
+        buttonTheme: 'light',
+        buttonBorderRadius: "22",
+        buttonIcon: 'ya',
       }
     )
       .then(({ handler }) => handler())
