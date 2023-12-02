@@ -45,7 +45,16 @@ window.onload = () => {
         response_type: "code",
         redirect_uri: "https://oauth.yandex.ru/verification_code",
       },
-      "https://oauth-master-class-azure.vercel.app/"
+      "https://oauth-master-class-azure.vercel.app/",
+      {
+        view: "button",
+        parentId: "buttonContainerId",
+        buttonSize: 'm',
+        buttonView: 'main',
+        buttonTheme: 'light',
+        buttonBorderRadius: "22",
+        buttonIcon: 'ya',
+      }
     )
       .then(({handler}) => handler())
       .then(data => console.log('Сообщение с токеном', data))
