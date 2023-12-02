@@ -34,10 +34,7 @@ window.onload = () => {
       }
     )
       .then(({handler}) => handler())
-      .then(data => {
-        console.log('Сообщение с токеном', data);
-        parent.close();
-      })
+      .then(data => console.log('Сообщение с токеном', data))
       .catch(error => console.log('Обработка ошибки', error));
   };
 };
