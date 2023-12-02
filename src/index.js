@@ -37,4 +37,18 @@ window.onload = () => {
       .then(data => console.log('Сообщение с токеном', data))
       .catch(error => console.log('Обработка ошибки', error));
   };
+
+  document.getElementById("code").onclick = () => {
+    window.YaAuthSuggest.init(
+      {
+        client_id: "07ba81568e504583b5f33282cfdcd5b1",
+        response_type: "code",
+        redirect_uri: "https://oauth-master-class-azure.vercel.app/token.html",
+      },
+      "https://oauth-master-class-azure.vercel.app/"
+    )
+      .then(({handler}) => handler())
+      .then(data => console.log('Сообщение с токеном', data))
+      .catch(error => console.log('Обработка ошибки', error));
+  };
 };
