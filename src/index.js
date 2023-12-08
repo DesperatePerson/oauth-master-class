@@ -4,7 +4,7 @@ window.onload = () => {
       {
          client_id: '07ba81568e504583b5f33282cfdcd5b1',
          response_type: 'token',
-         redirect_uri: 'https://oauth-master-class-azure.vercel.app/token.html'
+         redirect_uri: 'https://oauth.yandex.ru/verification_code'
       },
       'https://oauth-master-class-azure.vercel.app/'
    )  
@@ -42,7 +42,7 @@ window.onload = () => {
     window.YaAuthSuggest.init(
       {
         client_id: "07ba81568e504583b5f33282cfdcd5b1",
-        response_type: "token",
+        response_type: "code",
         redirect_uri: "https://oauth.yandex.ru/verification_code",
       },
       "https://oauth-master-class-azure.vercel.app/",
